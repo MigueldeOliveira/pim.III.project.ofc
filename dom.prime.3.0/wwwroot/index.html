@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dom Prime Barbearia</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+
+<nav id="navbar">
+
+  <a href="#hero" class="nav-logo">
+    DOM <span>PRIME</span>
+  </a>
+
+  <div class="nav-menu-wrap">
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+
+    <div class="nav-dropdown" id="navDropdown">
+      <ul class="nav-dropdown-links">
+        <li><a href="#servicos" class="dropdown-link">Serviços</a></li>
+        <li><a href="#sobre" class="dropdown-link">Sobre</a></li>
+        <li><a href="#depoimentos" class="dropdown-link">Depoimentos</a></li>
+        <li><a href="#agendamento" class="dropdown-link">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <button class="nav-login" id="btnLogin">Login</button>
+
+</nav>
+
+<!-- MODAL LOGIN -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+
+    <button class="modal-close" id="modalClose">✕</button>
+
+    <div class="modal-header">
+      <span class="modal-eyebrow">Acesso</span>
+      <div class="modal-sep"></div>
+      <h2 class="modal-title">Entrar na <em>conta</em></h2>
+    </div>
+
+    <div class="modal-form">
+      <div class="form-group">
+        <label class="form-label">E-mail</label>
+        <input type="email" class="form-input" placeholder="seu@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Senha</label>
+        <input type="password" class="form-input" placeholder="••••••••">
+      </div>
+      <button class="btn-submit">Entrar</button>
+      <p class="modal-footer-text">
+        Não tem conta? <a href="#" class="modal-link">Cadastre-se</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- HERO -->
+
+<section id="hero">
+
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+
+    <div class="hero-badge">
+      <span class="hero-badge-line"></span>
+      <span>Desde 2018 · São Paulo</span>
+      <span class="hero-badge-line"></span>
+    </div>
+
+    <h1 class="hero-title">
+      DOM<br>
+      <span class="gold">PRIME</span>
+    </h1>
+
+    <p class="hero-subtitle">Barbearia</p>
+
+    <p class="hero-desc">
+      Uma experiência premium de estética masculina.
+      Onde cada detalhe é tratado com precisão e cada cliente é recebido com excelência.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#agendamento" class="btn-primary">Agendar Horário</a>
+      <a href="#servicos" class="btn-ghost">Nossos Serviços</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">+5k</span>
+        <span class="stat-label">Clientes</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">7+</span>
+        <span class="stat-label">Anos</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">98%</span>
+        <span class="stat-label">Satisfação</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVIÇOS -->
+
+<section id="servicos">
+
+  <div class="section-header reveal">
+
+    <span class="section-eyebrow">
+      O que oferecemos
+    </span>
+
+    <div class="section-sep"></div>
+
+    <h2 class="section-title">
+      Serviços <em>Exclusivos</em>
+    </h2>
+
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+
+      <span class="service-icon">✂️</span>
+
+      <p class="service-name">
+        Corte de Cabelo
+      </p>
+
+      <p class="service-desc">
+        Técnicas modernas e clássicas para o corte perfeito ao seu estilo.
+      </p>
+
+    </div>
+
+    <div class="service-card reveal">
+
+      <span class="service-icon">🪒</span>
+
+      <p class="service-name">
+        Barba
+      </p>
+
+      <p class="service-desc">
+        Modelagem, aparação e tratamento de barba com produtos premium.
+      </p>
+
+    </div>
+
+    <div class="service-card reveal">
+
+      <span class="service-icon">👁️</span>
+
+      <p class="service-name">
+        Sobrancelha Masculina
+      </p>
+
+      <p class="service-desc">
+        Design e definição para uma aparência bem cuidada e natural.
+      </p>
+
+    </div>
+
+    <div class="service-card reveal">
+
+      <span class="service-icon">💧</span>
+
+      <p class="service-name">
+        Tratamentos Capilares
+      </p>
+
+      <p class="service-desc">
+        Hidratação, reconstrução e cuidados para cabelos saudáveis.
+      </p>
+
+    </div>
+
+    <div class="service-card reveal">
+
+      <span class="service-icon">🧴</span>
+
+      <p class="service-name">
+        Produtos Masculinos
+      </p>
+
+      <p class="service-desc">
+        Linha selecionada de produtos de alta qualidade para uso diário.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SOBRE -->
+
+<section id="sobre">
+
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Nossa história</span>
+    <div class="section-sep"></div>
+    <h2 class="section-title">Sobre a <em>Dom Prime</em></h2>
+  </div>
+
+  <div class="sobre-wrap">
+
+    <div class="sobre-text reveal">
+      <p class="sobre-desc">
+        Fundada em 2018 em São Paulo, a Dom Prime nasceu com um propósito claro: 
+        elevar o padrão da barbearia masculina. Não somos apenas um lugar para cortar o cabelo — 
+        somos um ritual de cuidado, identidade e confiança.
+      </p>
+      <p class="sobre-desc">
+        Cada profissional da casa é selecionado não só pela técnica, mas pela capacidade 
+        de ouvir e entregar exatamente o que o cliente precisa. Aqui, você não é mais um número na fila.
+      </p>
+
+      <div class="sobre-pilares">
+
+        <div class="pilar">
+          <span class="pilar-num">01</span>
+          <div>
+            <p class="pilar-title">Precisão</p>
+            <p class="pilar-desc">Cada corte executado com técnica apurada e atenção ao detalhe.</p>
+          </div>
+        </div>
+
+        <div class="pilar">
+          <span class="pilar-num">02</span>
+          <div>
+            <p class="pilar-title">Ambiente</p>
+            <p class="pilar-desc">Um espaço pensado para que você relaxe e se sinta em casa.</p>
+          </div>
+        </div>
+
+        <div class="pilar">
+          <span class="pilar-num">03</span>
+          <div>
+            <p class="pilar-title">Excelência</p>
+            <p class="pilar-desc">Produtos premium e profissionais em constante atualização.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sobre-card reveal">
+      <div class="sobre-card-inner">
+        <span class="sobre-card-ano">2018</span>
+        <div class="sobre-card-sep"></div>
+        <p class="sobre-card-label">Fundação</p>
+        <div class="sobre-card-stats">
+          <div class="sobre-stat">
+            <span class="sobre-stat-num">+5k</span>
+            <span class="sobre-stat-label">Clientes atendidos</span>
+          </div>
+          <div class="sobre-stat">
+            <span class="sobre-stat-num">7+</span>
+            <span class="sobre-stat-label">Anos de experiência</span>
+          </div>
+          <div class="sobre-stat">
+            <span class="sobre-stat-num">4</span>
+            <span class="sobre-stat-label">Profissionais especializados</span>
+          </div>
+          <div class="sobre-stat">
+            <span class="sobre-stat-num">98%</span>
+            <span class="sobre-stat-label">Taxa de satisfação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DEPOIMENTOS -->
+
+<section id="depoimentos">
+
+  <div class="section-header reveal">
+    <span class="section-eyebrow">O que dizem</span>
+    <div class="section-sep"></div>
+    <h2 class="section-title">Depoimentos <em>Reais</em></h2>
+  </div>
+
+  <div class="depoimentos-grid">
+
+    <div class="depoimento-card reveal">
+      <div class="depo-quote">"</div>
+      <p class="depo-text">
+        Melhor barbearia que já fui em SP. O ambiente é outro nível, o atendimento é impecável 
+        e o resultado superou todas as expectativas. Voltei na semana seguinte.
+      </p>
+      <div class="depo-author">
+        <div class="depo-avatar">RM</div>
+        <div>
+          <p class="depo-name">Rafael Mendes</p>
+          <p class="depo-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card reveal">
+      <div class="depo-quote">"</div>
+      <p class="depo-text">
+        Finalmente encontrei uma barbearia que entende o que eu quero sem eu precisar 
+        explicar muito. O barbeiro já captou meu estilo desde a primeira vez.
+      </p>
+      <div class="depo-author">
+        <div class="depo-avatar">CS</div>
+        <div>
+          <p class="depo-name">Carlos Silva</p>
+          <p class="depo-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card reveal">
+      <div class="depo-quote">"</div>
+      <p class="depo-text">
+        Fui pela primeira vez indicado por um amigo e saí cliente fiel. A barba ficou 
+        perfeita, o ambiente é premium e o preço é justo pelo que oferecem.
+      </p>
+      <div class="depo-author">
+        <div class="depo-avatar">LF</div>
+        <div>
+          <p class="depo-name">Lucas Ferreira</p>
+          <p class="depo-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card reveal">
+      <div class="depo-quote">"</div>
+      <p class="depo-text">
+        Vim pelo Instagram, fiquei pelo serviço. O espaço é elegante sem ser pretensioso, 
+        e os profissionais realmente sabem o que fazem. Recomendo sem hesitar.
+      </p>
+      <div class="depo-author">
+        <div class="depo-avatar">BN</div>
+        <div>
+          <p class="depo-name">Bruno Nobre</p>
+          <p class="depo-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card reveal">
+      <div class="depo-quote">"</div>
+      <p class="depo-text">
+        Há dois anos vindo aqui todo mês. Nunca saí decepcionado. A consistência 
+        da qualidade é o que mais me impressiona.
+      </p>
+      <div class="depo-author">
+        <div class="depo-avatar">TA</div>
+        <div>
+          <p class="depo-name">Thiago Alves</p>
+          <p class="depo-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card reveal">
+      <div class="depo-quote">"</div>
+      <p class="depo-text">
+        Atendimento pontual, sem enrolação. Fiz o corte e a barba em menos de uma hora 
+        e saí parecendo outra pessoa. Isso é profissionalismo.
+      </p>
+      <div class="depo-author">
+        <div class="depo-avatar">MO</div>
+        <div>
+          <p class="depo-name">Marcos Oliveira</p>
+          <p class="depo-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- AGENDAMENTO -->
+
+<section id="agendamento">
+
+  <div class="section-header reveal" style="margin-bottom:60px;">
+
+    <span class="section-eyebrow">
+      Vamos conversar
+    </span>
+
+    <div class="section-sep"></div>
+
+    <h2 class="section-title">
+      Agende seu <em>Horário</em>
+    </h2>
+
+  </div>
+
+  <div class="booking-wrap">
+
+    <div class="booking-info reveal">
+
+      <p>
+        Reserve seu horário e garanta uma experiência premium.
+      </p>
+
+    </div>
+
+    <div class="booking-form reveal">
+
+      <!-- NOME -->
+
+      <div class="form-group">
+
+        <label class="form-label">
+          Nome Completo
+        </label>
+
+        <input
+          type="text"
+          id="nome"
+          class="form-input"
+          placeholder="Seu nome">
+
+      </div>
+
+      <!-- TELEFONE -->
+
+      <div class="form-group">
+
+        <label class="form-label">
+          WhatsApp
+        </label>
+
+        <input
+          type="tel"
+          id="telefone"
+          class="form-input"
+          placeholder="(11) 9 0000-0000">
+
+      </div>
+
+      <!-- SERVIÇO -->
+
+      <div class="form-group">
+
+        <label class="form-label">
+          Serviço
+        </label>
+
+        <select id="servico" class="form-select">
+
+          <option value="">
+            Selecione o serviço
+          </option>
+
+          <option>
+            Corte de Cabelo
+          </option>
+
+          <option>
+            Barba
+          </option>
+
+          <option>
+            Corte + Barba
+          </option>
+
+          <option>
+            Sobrancelha Masculina
+          </option>
+
+          <option>
+            Tratamento Capilar
+          </option>
+
+        </select>
+
+      </div>
+
+      <div class="form-row">
+
+        <!-- DATA -->
+
+        <div class="form-group">
+
+          <label class="form-label">
+            Data
+          </label>
+
+          <input
+            type="date"
+            id="data"
+            class="form-input">
+
+        </div>
+
+        <!-- HORÁRIO -->
+
+        <div class="form-group">
+
+          <label class="form-label">
+            Horário
+          </label>
+
+          <select id="horario" class="form-select">
+
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+            <option>19:00</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+      <!-- BOTÃO -->
+
+      <button class="btn-submit" id="btnSubmit">
+
+        Confirmar Agendamento
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2025 Dom Prime Barbearia
+    </p>
+
+  </div>
+
+</footer>
+
+<!-- JS -->
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
